@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+<title> Instagram </title>
+<link rel="icon" href="icone.png" type="image/x-icon">
+
+    <style>
+         
+         main {
+            user-select: none;
+            border: 5px solid red;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px red;
+            display: auto;
+            cursor: pointer;
+            font-size: 5vh;
+            position: relative;
+            width: 125px;
+            left: 300px;
+            background-color: grey;
+            
+        }
+    
+    div video{
+        box-shadow: 5px 5px 5px red;
+        border: 5px solid red;
+        border-radius: 50px;
+
+
+    }
+
+    
+    </style>
+<head>
+<body background="https://i0.wp.com/techconnecto.com/wp-content/uploads/2017/04/featured.gif?fit=550%2C300&ssl=1">
+
+     <div class="img">
+         <img src="instagram.png" width="500px" height="200px">
+     </div>
+
+    <div class="video"><video width="300px" height="500px" controls="">
+        <source src="video.mp4" type="video/mp4">
+     </video></div>
+        
+ <main>
+
+        <img src="23960.svg">
+        <div>0</div>
+    </main>
+
+
+
+   <script>
+        const domMain = document.querySelector("main")
+        // const domDivNum = document.querySelector("main div:last-child")
+        const domDivNum = domMain.querySelector("div:last-child")
+        let counter = 0
+        domMain.addEventListener("click", () => {
+            counter++
+            domDivNum.innerHTML = counter
+        })
+    </script>
+</body>
+
+
+</html>
+
+
